@@ -1,0 +1,9 @@
+#colonneGauche{
+	background-color: grey;
+	height: 750px;
+}
+
+#map {
+        height: 750px;
+        width: 100%;
+       }
