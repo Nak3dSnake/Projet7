@@ -1,0 +1,2 @@
+map.initMap();
+map.restoJson();
