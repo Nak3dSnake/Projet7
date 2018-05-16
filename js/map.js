@@ -1,5 +1,9 @@
 var map;
 
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+});
+
 // API google map
 function initMap() {
 			        var Lyon = {lat: 45.750000, lng: 4.850000};
@@ -17,19 +21,17 @@ function initMap() {
 function restoJson(){
 
 // pour récupérer les données du fichier json
-        $.getJSON('restaurants.json', function(restaurants){
+    $.getJSON('restaurants.json', function(restaurants){
 
 	          // pour faire une boucle sur chaque entrée du fichier json
-	        $.each(restaurants, function(index, restaurant){
+	    $.each(restaurants, function(index, restaurant){
 					
-
-				var marker = new google.maps.Marker({
-		          position: {lat: restaurant.lat, lng: restaurant.long},
-		          map: map
-				});
+			var marker = new google.maps.Marker({
+		      position: {lat: restaurant.lat, lng: restaurant.long},
+		      map: map
+			});
 	            
+	    });
 
-	        });
-
-        });
+    });
 }
