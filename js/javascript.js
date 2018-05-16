@@ -3,7 +3,7 @@ var map;
 // API google map
 function initMap() {
 			        var Lyon = {lat: 45.750000, lng: 4.850000};
-			        var map = new google.maps.Map(document.getElementById('map'), {
+			        map = new google.maps.Map(document.getElementById('map'), {
 			          zoom: 15,
 			          center: Lyon
 			        });
@@ -15,9 +15,10 @@ function initMap() {
 }
 
 function restoJson(){
+
 // pour récupérer les données du fichier json
         $.getJSON('restaurants.json', function(restaurants){
-
+console.log("ok");
 	          // pour faire une boucle sur chaque entrée du fichier json
 	        $.each(restaurants, function(index, restaurant){
 					
@@ -30,5 +31,5 @@ function restoJson(){
 
 	        });
 
-        })
+        });
 }
