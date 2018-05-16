@@ -1,5 +1,9 @@
 var map;
 
+ $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
 // API google map
 function initMap() {
 			        var Lyon = {lat: 45.750000, lng: 4.850000};
@@ -26,7 +30,8 @@ function restoJson(){
 							          position: {lat: restaurant.lat, lng: restaurant.long},
 							          map: map
 					});
-	            
+	            var li = $('<li/>').appendTo($('#container_resto'));
+	            $('<div/>').addClass('collapsible-header').html("coucou").appendTo(li);
 
 	        });
 
