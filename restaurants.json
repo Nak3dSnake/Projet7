@@ -1,9 +1,9 @@
 [
    {
       "restaurantName":"Bronco",
-      "address":"39 Rue des Petites Écuries, 75010 Lyon",
-      "lat":45.850000,
-      "long":4.900000,
+      "address":"39 Rue des Petites Écuries, 69003 Lyon",
+      "lat":45.756500,
+      "long":4.855140,
       "ratings":[
          {
             "stars":4,
@@ -17,9 +17,9 @@
    },
    {
       "restaurantName":"Babalou",
-      "address":"4 Rue Lamarck, 75018 Lyon",
-      "lat":45.851700,
-      "long":4.7442197,
+      "address":"4 Rue du pilori, 69003 Lyon",
+      "lat":45.756412,
+      "long":4.871548,
       "ratings":[
          {
             "stars":5,
@@ -33,9 +33,9 @@
    },
    {
       "restaurantName":"La bonne pâte",
-      "address":"4 Rue Lamarck, 75018 Lyon",
-      "lat":45.651700,
-      "long":4.9442197,
+      "address":"24 Rue Lamarck, 69003 Lyon",
+      "lat":45.752315,
+      "long":4.852657,
       "ratings":[
          {
             "stars":2,
@@ -49,9 +49,9 @@
    },
    {
       "restaurantName":"Le p'tit bouchon",
-      "address":"5 Rue Lamartine, 69000 Lyon",
-      "lat":45.451700,
-      "long":4.2442197,
+      "address":"5 Rue Lamartine, 69003 Lyon",
+      "lat":45.756153,
+      "long":4.832487,
       "ratings":[
          {
             "stars":5,
@@ -65,9 +65,9 @@
    },
    {
       "restaurantName":"Chez Gérard",
-      "address":"5 Rue Lamartine, 69000 Lyon",
-      "lat":45.481700,
-      "long":4.2642197,
+      "address":"55 Rue de Napoléon, 69002 Lyon",
+      "lat":45.756953,
+      "long":4.842487,
       "ratings":[
          {
             "stars":4,
