@@ -1,5 +1,5 @@
 #colonneGauche{
-	background-color: grey;
+	background-color: #BCCAE8;
 	height: 750px;
 }
 
@@ -7,3 +7,9 @@
         height: 750px;
         width: 100%;
        }
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
