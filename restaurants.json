@@ -1,7 +1,8 @@
+// modifications à faire, rue, code postal, lat/long
 [
    {
       "restaurantName":"Bronco",
-      "address":"39 Rue des Petites Écuries, 75010 Paris",
+      "address":"39 Rue des Petites Écuries, 75010 Lyon",
       "lat":45.850000,
       "long":4.900000,
       "ratings":[
@@ -17,7 +18,7 @@
    },
    {
       "restaurantName":"Babalou",
-      "address":"4 Rue Lamarck, 75018 Paris",
+      "address":"4 Rue Lamarck, 75018 Lyon",
       "lat":45.851700,
       "long":4.7442197,
       "ratings":[
@@ -28,6 +29,54 @@
          {
             "stars":3,
             "comment":"J'ai trouvé ça correct, sans plus"
+         }
+      ]
+   },
+   {
+      "restaurantName":"La bonne pâte",
+      "address":"4 Rue Lamarck, 75018 Lyon",
+      "lat":45.651700,
+      "long":4.9442197,
+      "ratings":[
+         {
+            "stars":2,
+            "comment":"Passable"
+         },
+         {
+            "stars":3,
+            "comment":"Menus à revoir"
+         }
+      ]
+   },
+   {
+      "restaurantName":"Le p'tit bouchon",
+      "address":"5 Rue Lamartine, 69000 Lyon",
+      "lat":45.451700,
+      "long":4.2442197,
+      "ratings":[
+         {
+            "stars":5,
+            "comment":"Les meilleures quennelles de Lyon"
+         },
+         {
+            "stars":5,
+            "comment":"Meilleur bistro du quartier"
+         }
+      ]
+   },
+   {
+      "restaurantName":"Chez Gérard",
+      "address":"5 Rue Lamartine, 69000 Lyon",
+      "lat":45.481700,
+      "long":4.2642197,
+      "ratings":[
+         {
+            "stars":4,
+            "comment":"Bistro familial ou Gégé nous accueille toujours avec amour"
+         },
+         {
+            "stars":3,
+            "comment":"Y'a du bon vin!"
          }
       ]
    }
