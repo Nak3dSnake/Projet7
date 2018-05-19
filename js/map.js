@@ -31,6 +31,7 @@ var map = {
 			      position: {lat: restaurant.lat, lng: restaurant.long},
 			      map: map.googlemap
 				});
+
 	            
 	    	});
 
