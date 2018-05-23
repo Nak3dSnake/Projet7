@@ -32,7 +32,12 @@ var map = {
 			      map: map.googlemap
 				});
 
-	            
+				$('ul').html('<li class="test">' +restaurant.restaurantName+ '<li/>');
+
+				 $('.test').text(restaurant.restaurantName);
+				
+
+
 	    	});
 
     	});
