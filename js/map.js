@@ -18,7 +18,6 @@ var map = {
 			          position: Lyon,
 			          map: map.googlemap
 			        });
-		this.restoJson();
 	},
 
 	restoJson: function(){
@@ -32,11 +31,12 @@ var map = {
 			      map: map.googlemap
 				});
 
-				$('ul').html('<li class="test">' +restaurant.restaurantName+ '<li/>');
+			var li = $('<li/>').appendTo($('ul'));
+			$('<div/>').addClass('collapsible-header').html(restaurant.restaurantName).appendTo(li);
+			var div = $('<div/>').addClass('collapsible-body').appendTo(li);
+			var span = $('<span/>').appendTo(div);
 
-				 $('.test').text(restaurant.restaurantName);
-				
-
+			$(span).html('Glissez ici image street view et ratings')
 
 	    	});
 
