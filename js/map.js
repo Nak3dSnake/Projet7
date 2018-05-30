@@ -31,12 +31,17 @@ var map = {
 			      map: map.googlemap
 				});
 
+
+			// création structure collapsible avec nom restau
 			var li = $('<li/>').appendTo($('ul'));
 			$('<div/>').addClass('collapsible-header').html(restaurant.restaurantName).appendTo(li);
 			var div = $('<div/>').addClass('collapsible-body').appendTo(li);
 			var span = $('<span/>').appendTo(div);
+			var avis = $('<div/>').appendTo(div);
 
-			$(span).html('Glissez ici image street view et ratings')
+			// insertion image google street view et commentaires
+			$(span).html('<img src="https://maps.googleapis.com/maps/api/streetview?size=320x200&location=' + restaurant.lat + ',' + restaurant.long + '&heading=151.78&pitch=-0.76&key=AIzaSyAzW5weSwyYwqjuv4QuBLJ4WKVEun5EG1E"/>');
+			$(avis).append(restaurant.restaurantName);
 
 	    	});
 
