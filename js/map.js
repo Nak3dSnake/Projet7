@@ -2,6 +2,14 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
 });
 
+
+
+
+
+
+
+
+
 var map = {
 
 	googlemap: "",
@@ -14,6 +22,7 @@ var map = {
 			          zoom: 15,
 			          center: Lyon
 			        });
+			        
 			        var marker = new google.maps.Marker({
 			          position: Lyon,
 			          map: map.googlemap
@@ -29,20 +38,43 @@ var map = {
 				var marker = new google.maps.Marker({
 			      position: {lat: restaurant.lat, lng: restaurant.long},
 			      map: map.googlemap
+
+
 				});
 
 
-			// création structure collapsible avec nom restau
-			var li = $('<li/>').appendTo($('ul'));
-			$('<div/>').addClass('collapsible-header').html(restaurant.restaurantName).appendTo(li);
-			var div = $('<div/>').addClass('collapsible-body').appendTo(li);
-			var span = $('<span/>').appendTo(div);
-			var avis = $('<div/>').appendTo(div);
+				// création structure collapsible avec nom restau
+				var li = $('<li/>').appendTo($('ul'));
+				$('<div/>').addClass('collapsible-header').html(restaurant.restaurantName + '<div id="rateYo-'+index + '"></div>').appendTo(li);
+				var div = $('<div/>').addClass('collapsible-body').appendTo(li);
+				var span = $('<span/>').appendTo(div);
+				var avis = $('<div/>').appendTo(div);
 
-			// insertion image google street view et commentaires
-			$(span).html('<img src="https://maps.googleapis.com/maps/api/streetview?size=320x200&location=' + restaurant.lat + ',' + restaurant.long + '&heading=151.78&pitch=-0.76&key=AIzaSyAzW5weSwyYwqjuv4QuBLJ4WKVEun5EG1E"/>');
-			$(avis).append(restaurant.restaurantName);
+				// insertion image google street view
+				$(span).html('<img src="https://maps.googleapis.com/maps/api/streetview?size=295x185&location=' + restaurant.lat + ',' + restaurant.long + '&heading=151.78&pitch=-0.76&key=AIzaSyAzW5weSwyYwqjuv4QuBLJ4WKVEun5EG1E"/>');
+				
 
+				var totalNote= 0;
+				var nombreNote= 0;
+				// insertion commentaires + note moyenne
+				restaurant.ratings.forEach(function (rating) {
+					
+			
+					$(avis).append('<p>' + rating.stars + '</p>' + rating.comment);
+					 nombreNote++;
+					 totalNote = totalNote + rating.stars;
+					
+
+				})
+				var moy = totalNote / nombreNote;
+
+	 
+				$("#rateYo-"+ index).rateYo({
+				    rating: moy,
+				    readOnly: true
+				});
+			 
+		
 	    	});
 
     	});
