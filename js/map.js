@@ -9,6 +9,7 @@ var map = {
 
     initMap: function() {
 
+
         var Lyon = { lat: this.latitude, lng: 4.850000 };
         map.googlemap = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
@@ -20,8 +21,23 @@ var map = {
             map: map.googlemap,
             title: "Votre position"
         });
+
+        map.googlemap.addListener('click', function(e) {
+
+            console.log("hello");
+            map.placeMarkerAndPanTo(e.latLng, map.googlemap);
+        });
     },
 
+
+
+    placeMarkerAndPanTo: function(latLng, map) {
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+        });
+        map.panTo(latLng);
+    },
     restoJson: function() {
         $.getJSON('restaurants.json', function(restaurants) {
 
