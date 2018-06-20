@@ -1,14 +1,14 @@
-#colonneGauche{
-	height: 750px;
+#colonneGauche {
+    height: 750px;
 }
 
 #map {
-        height: 750px;
-        width: 100%;
-       }
+    height: 750px;
+    width: 100%;
+}
 
-form{
+form {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
+    justify-content: space-around;
 }
